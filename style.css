@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url("xx.jpg") no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.alert {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #FF6347;
+  color: black;
+  font-size: 50px;
+  width: 600px;
+  height: 250px;
+  z-index: 3;
+  border: 5px solid black;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.alert:hover {
+  background: black;
+  border: 5px solid yellow;
+  color: yellow;
+  transition: 0.5s;
+}
+
+.container {
+  background: yellowgreen;
+  width: 1000px;
+  height: 600px;
+  border: 10px solid black;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.exelents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.exelents .button {
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.button {
+  padding: 20px 40px;
+  background: #FF6347;
+  font-size: 30px;
+  border: 5px solid black;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Arial";
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  background: black;
+  color: yellow;
+  border: 5px solid yellow;
+  transition: 0.5s;
+}
+
+.mouth {
+  width: 50px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  border-bottom: 10px solid black;
+}
+
+.hamster {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: red;
+  background: rgb(130, 67, 0);
+  border-radius: 15px;
+  position: absolute;
+}
+
+.hamster::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  border-top: 5px solid black;
+}
+
+.hamster::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-top: 5px solid black;
+}/*# sourceMappingURL=style.css.map */
